@@ -13,8 +13,8 @@ namespace OnlineBookStore.Models.BusinessLogic
         private string _ContactPhoneNumber;
         private string _ContactTitle;
         private string _ContactContent;
-        private DateTime _ContactDateUpdated;
         private DateTime _ContactDateCreated;
+        private DateTime _ContactDateUpdated;
         private int _ContactActive;
 
         public ContactBL()
@@ -28,8 +28,8 @@ namespace OnlineBookStore.Models.BusinessLogic
                          string ContactPhoneNumber_, 
                          string ContactTitle_, 
                          string ContactContent_,
+                         DateTime ContactDateCreated_,
                          DateTime ContactDateUpdated_, 
-                         DateTime ContactDateCreated_, 
                          int ContactActive_)
         {
             _ContactID = ContactID_;
@@ -38,8 +38,8 @@ namespace OnlineBookStore.Models.BusinessLogic
             _ContactPhoneNumber = ContactPhoneNumber_;
             _ContactTitle = ContactTitle_;
             _ContactContent = ContactContent_;
-            _ContactDateUpdated = ContactDateUpdated_;
             _ContactDateCreated = ContactDateCreated_;
+            _ContactDateUpdated = ContactDateUpdated_;
             _ContactActive = ContactActive_;
         }
 
@@ -48,8 +48,8 @@ namespace OnlineBookStore.Models.BusinessLogic
                          string ContactPhoneNumber_, 
                          string ContactTitle_, 
                          string ContactContent_,
-                         DateTime ContactDateUpdated_, 
-                         DateTime ContactDateCreated_, 
+                         DateTime ContactDateCreated_,
+                         DateTime ContactDateUpdated_,  
                          int ContactActive_)
         {
             _ContactFullName = ContactFullName_;
@@ -57,12 +57,14 @@ namespace OnlineBookStore.Models.BusinessLogic
             _ContactPhoneNumber = ContactPhoneNumber_;
             _ContactTitle = ContactTitle_;
             _ContactContent = ContactContent_;
-            _ContactDateUpdated = ContactDateUpdated_;
             _ContactDateCreated = ContactDateCreated_;
+            _ContactDateUpdated = ContactDateUpdated_;
             _ContactActive = ContactActive_;
         }
 
-        public ContactBL(int ContactID_, DateTime ContactDateUpdated_, int ContactActive_)
+        public ContactBL(int ContactID_, 
+                         DateTime ContactDateUpdated_, 
+                         int ContactActive_)
         {
             _ContactID = ContactID_;
             _ContactDateUpdated = ContactDateUpdated_;
