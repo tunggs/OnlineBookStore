@@ -64,7 +64,7 @@ namespace OnlineBookStore.Models.BusinessLogic
                            int PublisherSort_)
         {
             _PublisherID = PublisherID_;
-            _Publisher = Publisher_;
+            _PublisherSort = PublisherSort_;
         }
 
         public PublisherBL(int PublisherID_)
